@@ -16,7 +16,6 @@ import { DxSelectBoxModule } from 'devextreme-angular';
     DxiFieldModule,
     DxSelectBoxModule,
     HttpClientModule
-
   ],
   exports: [CidadeEstadoComponent]
 })
