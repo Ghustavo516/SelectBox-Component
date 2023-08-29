@@ -1,0 +1,19 @@
+<div class="dx-fieldset">
+  <div class="dx-field">
+    <div class="dx-field-label">Estados</div>
+    <div class="dx-field-value">
+      <dx-select-box
+        [items]="estados"
+        displayExpr="UF"
+        (onValueChanged)="consultaMunicipios($event)"
+      ></dx-select-box>
+    </div>
+    <div class="dx-field-label">Cidade</div>
+    <div class="dx-field-value">
+      <dx-select-box
+        [items]="municipios"
+        displayExpr="text"
+
+      ></dx-select-box>
+  </div>
+</div>
