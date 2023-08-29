@@ -14,6 +14,6 @@ export class CidadeEstadoService {
   }
 
   getMunicipios(siglaUF: string): Observable<any[]>{
-    return this.http.get<any[]>('https://servicodados.ibge.gov.br/api/v1/localidades/estados/' + siglaUF + '/distritos?orderBy=nome')
+    return this.http.get<any[]>('https://servicodados.ibge.gov.br/api/v1/localidades/estados/' + siglaUF + '/municipios?orderBy=nome')
   }
 }

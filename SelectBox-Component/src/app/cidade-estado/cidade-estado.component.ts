@@ -39,8 +39,10 @@ export class CidadeEstadoComponent implements OnInit{
     this.municipioEstadoService.getMunicipios(this.siglaUF).subscribe(data => {
       this.municipios = data.map(nomeMunicipio => ({
         id: nomeMunicipio.id,
-        text: nomeMunicipio.nome
+        name: nomeMunicipio.nome
       }))
+      console.log(data)
+
     })
 
 

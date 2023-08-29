@@ -8,11 +8,12 @@
         (onValueChanged)="consultaMunicipios($event)"
       ></dx-select-box>
     </div>
+
     <div class="dx-field-label">Cidade</div>
     <div class="dx-field-value">
       <dx-select-box
         [items]="municipios"
-        displayExpr="text"
+        displayExpr="name"
 
       ></dx-select-box>
   </div>
